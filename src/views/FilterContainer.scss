@@ -1,0 +1,13 @@
+.filter {
+  &--container {
+    padding: 20px;
+    margin: 30px;
+    background: #ccc;
+    border-radius: 10px;
+    border: 1px solid #111;
+    button {
+      margin-right: 10px;
+    }
+
+  }
+}
