@@ -5,7 +5,7 @@ import { PlusOutlined, MinusCircleOutlined } from "@ant-design/icons";
 const { Option } = Select;
 
 //@ATT:this was created to make nested dynamic elements! This is hard!
-const BedForm = props => {
+const FilterForm = props => {
     return (
         <>
             <Form.List name={[props.fieldKey, "beds"]}>
@@ -66,4 +66,4 @@ const BedForm = props => {
     );
 };
 
-export default BedForm;
+export default FilterForm;

@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { Input, Button, Form, Space } from "antd";
 import { MinusCircleOutlined, PlusOutlined } from "@ant-design/icons";
 import FormControl from "../components/FormControl";
-import BedForm from "../components/BedForm";
+import FilterForm from "../components/FilterForm";
 import "./FilterContainer.scss";
 
 const FilterContainer = () => {
@@ -23,7 +23,6 @@ const FilterContainer = () => {
                 label="How many rooms does your listing have?"
                 error={errors?.guest && <span>This field is required!</span>}
             >
-                {/* This is the Dynamic room Adder */}
                 <Form.List name="rooms">
                     {(fields, { add, remove }) => {
                         return (
@@ -48,7 +47,7 @@ const FilterContainer = () => {
                                         {/* This is the Dynamic bed Adder */}
 
                                         <Form.Item>
-                                            <BedForm fieldKey={field.name} />
+                                            <FilterForm fieldKey={field.name} />
                                         </Form.Item>
 
                                         <MinusCircleOutlined

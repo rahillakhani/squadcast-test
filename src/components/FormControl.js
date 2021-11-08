@@ -4,20 +4,12 @@ import PropTypes from "prop-types";
 // import Wrapper from "./FormControl.style";
 
 const FormControl = ({
-                         className,
                          label,
                          labelTag,
                          htmlFor,
                          children,
                          error
                      }) => {
-    // const addAllClasses = ["form-control"];
-    // if (error) {
-    //     addAllClasses.push("has-error");
-    // }
-    // if (className) {
-    //     addAllClasses.push(className);
-    // }
 
     return (
         <>
